@@ -30,7 +30,7 @@ with dag:
         task_id="task-one",
         in_cluster=True, # if set to true, will look in the cluster, if false, looks for file
         cluster_context='docker-for-desktop', # is ignored when in_cluster is set to True
-        config_file=config_file,
+        config_file=None,
         resources=compute_resource,
         is_delete_operator_pod=True,
         get_logs=True)
