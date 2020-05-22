@@ -86,5 +86,5 @@ t4 = KubernetesPodOperator(namespace='airflow',
                           get_logs=True,
                           dag=dag,
                           )
-t1 >> [t2, t3, t4]
+t4 >> t1 >> [t2, t3]
 
